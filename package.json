@@ -1,0 +1,31 @@
+{
+  "name": "do-shit-crud-app-ver1.0.1",
+  "version": "1.0.0",
+  "description": "A CRUD appication akin to todo list for bold designers and developers.",
+  "private": "true",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "npx webpack --config webpack.config.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Haldgerd/DO-SHIT-crud-app-ver1.0.1.git"
+  },
+  "keywords": [
+    "CRUD",
+    "app",
+    "react",
+    "webpack",
+    "todo"
+  ],
+  "author": "Laura \"Lorna\" Mally",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Haldgerd/DO-SHIT-crud-app-ver1.0.1/issues"
+  },
+  "homepage": "https://github.com/Haldgerd/DO-SHIT-crud-app-ver1.0.1#readme",
+  "devDependencies": {
+    "webpack": "^5.70.0",
+    "webpack-cli": "^4.9.2"
+  }
+}
