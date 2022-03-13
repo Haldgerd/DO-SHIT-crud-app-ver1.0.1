@@ -1,0 +1,18 @@
+@font-face {
+  font-family: "bebasregular";
+  src: url("../fonts/bebas-regular-webfont.woff2") format("woff2"),
+    url("../fonts/bebas-regular-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+h1 {
+  font-family: "bebasregular", monospace;
+  text-transform: uppercase;
+}
+
+.main__title {
+  color: magenta;
+  font-size: 4rem;
+  font-family: "bebasregular", monospace;
+}
