@@ -25,7 +25,10 @@ module.exports = {
     rules: [
       {
         test: /\.css$/i,
-        include: path.resolve(__dirname, "./src/assets/styles"),
+        use: ["style-loader", "css-loader"],
+      },
+      {
+        test: /\.s[as]s$/i,
         use: ["style-loader", "css-loader", "sass-loader"],
       },
       {
@@ -35,8 +38,16 @@ module.exports = {
       },
       {
         test: /\.(woff|woff2|eot|ttf|otf)$/i,
-        include: path.resolve(__dirname, "./src/assets/fonts"),
         type: "asset/inline",
+        // use: [
+        //   {
+        //     loader: "file-loader",
+        //     options: {
+        //       name: "[name].[ext]",
+        //       outputPath: "fonts/",
+        //     },
+        //   },
+        // ],
       },
       {
         test: /\.m?js$/,
