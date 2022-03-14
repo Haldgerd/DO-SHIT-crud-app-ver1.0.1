@@ -1,13 +1,13 @@
-const path = require('path')
-const HtmlWebpackPlugin = require('html-webpack-plugin')
-const ESLintPlugin = require('eslint-webpack-plugin')
-const MiniCssExtractPlugin = require('mini-css-extract-plugin')
+const path = require('path');
+const HtmlWebpackPlugin = require('html-webpack-plugin');
+const ESLintPlugin = require('eslint-webpack-plugin');
+const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 
 module.exports = {
     mode: 'development',
-    entry: './src/index.jsx',
+    entry: './src/index.js',
     devServer: {
-        static: './dist',
+        static: './dist/',
     },
     plugins: [
         new HtmlWebpackPlugin({
@@ -22,7 +22,7 @@ module.exports = {
     ],
     output: {
         filename: '[name].bundle.js',
-        path: path.resolve(__dirname, './dist'),
+        path: path.resolve(__dirname, './dist/'),
         clean: true,
     },
     //   modules suggest types of files to be imported and how webpack treats them
@@ -57,4 +57,4 @@ module.exports = {
             },
         ],
     },
-}
+};
