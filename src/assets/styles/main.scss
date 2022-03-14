@@ -1,13 +1,13 @@
 @font-face {
-  font-family: "bebasregular";
-  src: url("../fonts/bebas-regular-webfont.woff2") format("woff2"),
-    url("../fonts/bebas-regular-webfont.woff") format("woff");
-  font-weight: normal;
-  font-style: normal;
+    font-family: 'bebasregular';
+    src: url('../fonts/bebas-regular-webfont.woff2') format('woff2'),
+        url('../fonts/bebas-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
 }
 
 h1 {
-  text-transform: uppercase;
-  font-family: "bebasregular";
-  font-size: 4rem;
+    text-transform: uppercase;
+    font-family: 'bebasregular';
+    font-size: 4rem;
 }
