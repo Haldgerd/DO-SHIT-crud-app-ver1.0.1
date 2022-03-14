@@ -1,14 +1,10 @@
-import React from 'react';
-import '../assets/styles/button.scss';
+import React from 'react'
+import '../assets/styles/button.scss'
 
 const Button = ({ buttonClass }) => {
-    return (
-        <>
-            <button type="button" className={buttonClass}>
-                CLICK ME
-            </button>
-        </>
-    );
-};
+    ;<button type="button" className={buttonClass}>
+        CLICK ME
+    </button>
+}
 
-export default Button;
+export default Button

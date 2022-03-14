@@ -515,3 +515,10 @@ DID IT WORK: Well yes and no. We did get right of most errors but 12 of them per
 	"endColumn": 12
 }]
 ```
+
+So we can cleary see that most of this errors are connected to eslint rules. Once this is clear we can (in our terminal console - VSCode) check the documentation foe each of the errors. In some cases we only need to add a certain rule inside .eslintrc.json file and problems are solved.
+
+<strong>DO NOTE:</strong><br>
+Check the documentation for rules, read them and implement them. Experiment. Define the rules to be fit to your needs.
+
+SOLVED!

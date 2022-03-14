@@ -19,6 +19,22 @@
     "plugins": ["react"],
     "rules": {
         "react/jsx-uses-react": "error",
-        "react/jsx-uses-vars": "error"
+        "react/jsx-uses-vars": "error",
+        "react/jsx-filename-extension": [1, { "extensions": [".js", ".jsx"] }],
+        "react/no-unescaped-entities": [
+            "error",
+            {
+                "forbid": [
+                    {
+                        "char": ">",
+                        "alternatives": ["&gt;"]
+                    },
+                    {
+                        "char": "}",
+                        "alternatives": ["&#125;"]
+                    }
+                ]
+            }
+        ]
     }
 }
