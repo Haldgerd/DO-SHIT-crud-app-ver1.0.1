@@ -23,12 +23,12 @@ module.exports = {
   //   modules suggest types of files to be imported and how webpack treats them
   module: {
     rules: [
+      //   {
+      //     test: /\.css$/i,
+      //     use: ["style-loader", "css-loader"],
+      //   },
       {
-        test: /\.css$/i,
-        use: ["style-loader", "css-loader"],
-      },
-      {
-        test: /\.s[as]s$/i,
+        test: /\.s[ac]ss$/i,
         use: ["style-loader", "css-loader", "sass-loader"],
       },
       {
