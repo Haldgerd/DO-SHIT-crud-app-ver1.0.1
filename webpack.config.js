@@ -1,11 +1,11 @@
-const path = require('path');
-const HtmlWebpackPlugin = require('html-webpack-plugin');
-// const ESLintPlugin = require('eslint-webpack-plugin');
+const path = require('path')
+const HtmlWebpackPlugin = require('html-webpack-plugin')
+const ESLintPlugin = require('eslint-webpack-plugin')
+const MiniCssExtractPlugin = require('mini-css-extract-plugin')
 
 module.exports = {
     mode: 'development',
-    // from where to from bundle.js
-    entry: './src/index.js',
+    entry: './src/index.jsx',
     devServer: {
         static: './dist',
     },
@@ -15,7 +15,10 @@ module.exports = {
             template: path.resolve(__dirname, './public/index.html'), // template file
             filename: 'index.html', // output file
         }),
-        // new ESLintPlugin(),
+        new ESLintPlugin(),
+        new MiniCssExtractPlugin({
+            filename: '[name].css',
+        }),
     ],
     output: {
         filename: '[name].bundle.js',
@@ -27,11 +30,11 @@ module.exports = {
         rules: [
             {
                 test: /\.css$/i,
-                use: ['style-loader', 'css-loader'],
+                use: [MiniCssExtractPlugin.loader, 'css-loader'],
             },
             {
                 test: /\.s[ac]ss$/i,
-                use: ['style-loader', 'css-loader', 'sass-loader'],
+                use: [MiniCssExtractPlugin.loader, 'css-loader', 'sass-loader'],
             },
             {
                 test: /\.(png|svg|jpg|jpeg|gif)$/i,
@@ -54,4 +57,4 @@ module.exports = {
             },
         ],
     },
-};
+}
