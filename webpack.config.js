@@ -5,9 +5,11 @@ const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 
 module.exports = {
     mode: 'development',
-    entry: './src/index.js',
+    entry: {
+        entry: './src/index.js',
+    },
     devServer: {
-        static: './dist/',
+        static: './dist',
     },
     plugins: [
         new HtmlWebpackPlugin({
@@ -17,12 +19,12 @@ module.exports = {
         }),
         new ESLintPlugin(),
         new MiniCssExtractPlugin({
-            filename: '[name].css',
+            filename: '[name].[contenthash].css',
         }),
     ],
     output: {
-        filename: '[name].bundle.js',
-        path: path.resolve(__dirname, './dist/'),
+        filename: '[name].bundle.[contenthash].js',
+        path: path.resolve(__dirname, 'dist'),
         clean: true,
     },
     //   modules suggest types of files to be imported and how webpack treats them
