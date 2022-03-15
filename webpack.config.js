@@ -1,7 +1,7 @@
 const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const ESLintPlugin = require('eslint-webpack-plugin');
-const MiniCssExtractPlugin = require('mini-css-extract-plugin');
+// const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 
 module.exports = {
     mode: 'development',
@@ -18,9 +18,10 @@ module.exports = {
             filename: 'index.html', // output file
         }),
         new ESLintPlugin(),
-        new MiniCssExtractPlugin({
-            filename: '[name].[contenthash].css',
-        }),
+        // needed in production build where we care about application perfomance.
+        // new MiniCssExtractPlugin({
+        //     filename: '[name].[contenthash].css',
+        // }),
     ],
     output: {
         filename: '[name].bundle.[contenthash].js',
@@ -32,11 +33,11 @@ module.exports = {
         rules: [
             {
                 test: /\.css$/i,
-                use: [MiniCssExtractPlugin.loader, 'css-loader'],
+                use: ['style-loader', 'css-loader'],
             },
             {
                 test: /\.s[ac]ss$/i,
-                use: [MiniCssExtractPlugin.loader, 'css-loader', 'sass-loader'],
+                use: ['style-loader', 'css-loader', 'sass-loader'],
             },
             {
                 test: /\.(png|svg|jpg|jpeg|gif)$/i,
