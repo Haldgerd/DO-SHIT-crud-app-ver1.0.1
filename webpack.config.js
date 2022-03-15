@@ -28,6 +28,15 @@ module.exports = {
         path: path.resolve(__dirname, 'dist'),
         clean: true,
     },
+    resolve: {
+        extensions: ['js', 'ts'],
+        alias: {
+            '@': path.resolve(__dirname, 'src'),
+            '@assets': path.resolve(__dirname, 'src/assets'),
+            '@components': path.resolve(__dirname, 'src/components'),
+            // ...etc other paths - aliases
+        },
+    },
     //   modules suggest types of files to be imported and how webpack treats them
     module: {
         rules: [
