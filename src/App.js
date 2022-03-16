@@ -6,7 +6,6 @@ const App = () => {
     return (
         <>
             <Title />
-            <p>Hello it's me</p>
             <Button buttonClass="btn-lg" />
         </>
     );
