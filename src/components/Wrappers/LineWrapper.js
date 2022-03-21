@@ -1,13 +1,13 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-const LineWrapper = ({ children, wrapperClass }) => {
+const LinesWrapper = ({ children, wrapperClass }) => {
     return <div className={wrapperClass}>{children}</div>;
 };
 
-LineWrapper.PropTypes = {
+LinesWrapper.PropTypes = {
     children: PropTypes.node.isRequired,
     wrapperClass: PropTypes.string.isRequired,
 };
 
-export default LineWrapper;
+export default LinesWrapper;

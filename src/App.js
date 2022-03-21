@@ -1,6 +1,6 @@
 import React from 'react';
-import Button from './components/Global/Button';
-import Title from './components/Global/Title';
+import Button from './components/global/Button';
+import Title from './components/global/Title';
 
 const App = () => {
     return (

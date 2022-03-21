@@ -2,12 +2,12 @@ import React from 'react';
 import '@assets/styles/button.scss';
 import PropTypes from 'prop-types';
 
-const Button = ({ buttonClass, buttonHandleFunction }) => {
+const Button = ({ buttonClass, onClickHandleFunction }) => {
     return (
         <button
             type="button"
             className={buttonClass}
-            onClick={buttonHandleFunction}
+            onClick={onClickHandleFunction}
         >
             {buttonContent}
         </button>
@@ -16,7 +16,7 @@ const Button = ({ buttonClass, buttonHandleFunction }) => {
 
 Button.PropTypes = {
     buttonClass: PropTypes.string.isRequired,
-    buttonHandleFunction: PropTypes.func.isRequired,
+    onClickHandleFunction: PropTypes.func.isRequired,
     buttonContent: PropTypes.node,
 };
 
