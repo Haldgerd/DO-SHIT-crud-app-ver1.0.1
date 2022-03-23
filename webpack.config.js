@@ -41,11 +41,6 @@ module.exports = {
     module: {
         rules: [
             {
-                test: /\.css$/i,
-                use: ['style-loader', 'css-loader'],
-                exclude: /\.module\.css$/,
-            },
-            {
                 test: /\.css$/,
                 use: [
                     'style-loader',
@@ -59,6 +54,12 @@ module.exports = {
                 ],
                 // rule for css modules
                 include: /\.module\.css$/,
+            },
+            {
+                test: /\.css$/i,
+                use: ['style-loader', 'css-loader'],
+                include: './src/assets/styles/global.css',
+                exclude: /\.module\.css$/,
             },
             {
                 test: /\.s[ac]ss$/i,

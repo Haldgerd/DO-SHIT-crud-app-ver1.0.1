@@ -9,6 +9,7 @@
 :root {
     font-family: 'bebasregular', monospace;
     color: hsl(0, 0%, 100%);
+    background-color: turquoise;
 }
 
 *,

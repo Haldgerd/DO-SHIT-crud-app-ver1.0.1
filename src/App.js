@@ -1,21 +1,12 @@
 import React from 'react';
 
 // ------------------- COMPONENTS IMPORT -----------------
-import MainTitle from './containers/MainTitle/MainTitle';
-import Image from './components/UI/Image';
-import Illustration from './assets/images/diberkato-ufo-686x823.jpg';
+import LandingPage from './views/Landing/LandingPage';
+// import global cross pages styles such as :root ruleset, *, *::before etc.
+import './assets/styles/global.css';
 
 const App = () => {
-    return (
-        <>
-            <MainTitle />
-            <Image
-                alt="Illustrated person in 80's outfit."
-                source={Illustration}
-                imageClass=""
-            />
-        </>
-    );
+    return <LandingPage />;
 };
 
 export default App;
