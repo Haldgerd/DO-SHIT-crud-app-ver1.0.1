@@ -9,7 +9,7 @@ module.exports = {
         entry: './src/index.js',
     },
     devServer: {
-        static: './dist',
+        static: './dist/',
     },
     plugins: [
         new HtmlWebpackPlugin({
@@ -25,24 +25,40 @@ module.exports = {
     ],
     output: {
         filename: '[name].bundle.[contenthash].js',
-        path: path.resolve(__dirname, 'dist'),
+        path: path.resolve(__dirname, 'dist/'),
         clean: true,
     },
     resolve: {
-        extensions: ['js', 'ts'],
+        extensions: ['.js', '.ts'],
         alias: {
-            '@': path.resolve(__dirname, 'src'),
-            '@assets': path.resolve(__dirname, 'src/assets'),
-            '@components': path.resolve(__dirname, 'src/components'),
+            src: path.resolve(__dirname, 'src/'),
+            assets: path.resolve(__dirname, 'src/assets/'),
+            components: path.resolve(__dirname, 'src/components/'),
+            containers: path.resolve(__dirname, 'src/containers/'),
             // ...etc other paths - aliases
         },
     },
-    //   modules suggest types of files to be imported and how webpack treats them
     module: {
         rules: [
             {
                 test: /\.css$/i,
                 use: ['style-loader', 'css-loader'],
+                exclude: /\.module\.css$/,
+            },
+            {
+                test: /\.css$/,
+                use: [
+                    'style-loader',
+                    {
+                        loader: 'css-loader',
+                        options: {
+                            importLoaders: 1,
+                            modules: true,
+                        },
+                    },
+                ],
+                // rule for css modules
+                include: /\.module\.css$/,
             },
             {
                 test: /\.s[ac]ss$/i,

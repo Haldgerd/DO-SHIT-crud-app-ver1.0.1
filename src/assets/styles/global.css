@@ -6,5 +6,15 @@
     font-style: normal;
 }
 
-$ff-primary-bebas: 'bebasregular';
-$ff-secondary-mono: 'monospace';
+:root {
+    font-family: 'bebasregular', monospace;
+    color: hsl(0, 0%, 100%);
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}

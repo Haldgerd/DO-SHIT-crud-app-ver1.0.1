@@ -4,9 +4,18 @@
         "es2021": true,
         "node": true
     },
+    // "settings": {
+    //     "import/resolver": {
+    //         "node": {
+    //             "paths": ["./src/"],
+    //             "extensions": [".js", ".jsx", ".ts", ".tsx"]
+    //         }
+    //     }
+    // },
     "extends": [
         "eslint:recommended",
         "plugin:react/recommended",
+        // "plugin:import/recommended",
         "airbnb",
         "prettier"
     ],
@@ -43,18 +52,12 @@
         ],
         "arrow-body-style": ["error", "always"],
         "semi": ["error", "always"],
-        "react/require-default-props": [
-            2,
-            { "forbidDefaultForRequired": true }
-        ],
-        "import/no-extraneous-dependencies": [
-            "error",
-            {
-                "devDependencies": true,
-                "optionalDependencies": false,
-                "peerDependencies": false,
-                "bundledDependancies": false
-            }
-        ]
+        "react/require-default-props": [2, { "forbidDefaultForRequired": true }]
+        // "import/no-extraneous-dependencies": [
+        //     "error",
+        //     {
+        //         "devDependencies": true
+        //     }
+        // ]
     }
 }

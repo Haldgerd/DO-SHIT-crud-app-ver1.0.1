@@ -1,0 +1,14 @@
+.main__card {
+    color: hsl(37, 96%, 49%);
+}
+
+.main__title {
+    text-transform: uppercase;
+    font-family: 'bebasregular', monospace;
+    font-size: 4rem;
+}
+
+.main__subtitle {
+    font-size: 1.25rem;
+    text-transform: lowercase;
+}

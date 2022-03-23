@@ -1,12 +1,19 @@
 import React from 'react';
-import Button from './components/global/Button';
-import Title from './components/global/Title';
+
+// ------------------- COMPONENTS IMPORT -----------------
+import MainTitle from './containers/MainTitle/MainTitle';
+import Image from './components/UI/Image';
+import Illustration from './assets/images/diberkato-ufo-686x823.jpg';
 
 const App = () => {
     return (
         <>
-            <Title />
-            <Button buttonClass="btn-lg" />
+            <MainTitle />
+            <Image
+                alt="Illustrated person in 80's outfit."
+                source={Illustration}
+                imageClass=""
+            />
         </>
     );
 };
