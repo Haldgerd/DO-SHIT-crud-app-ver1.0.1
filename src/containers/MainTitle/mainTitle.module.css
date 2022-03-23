@@ -1,14 +1,24 @@
 .main__card {
     background-color: hsl(37, 96%, 49%);
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    width: 48vw;
+    height: 48vh;
+    /* grid-column: 1 / 4;
+    grid-row: 3 / 6; */
 }
 
 .main__title {
     text-transform: uppercase;
     font-family: 'bebasregular', monospace;
-    font-size: 4rem;
+    font-size: 10rem;
 }
 
 .main__subtitle {
     font-size: 1.25rem;
     text-transform: lowercase;
+    align-self: flex-start;
+    margin-left: 5.5em;
 }

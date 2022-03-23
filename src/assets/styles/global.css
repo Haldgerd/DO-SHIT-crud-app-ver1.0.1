@@ -9,7 +9,17 @@
 :root {
     font-family: 'bebasregular', monospace;
     color: hsl(0, 0%, 100%);
-    background-color: turquoise;
+    background-color: hsl(344, 81%, 51%);
+}
+
+main {
+    min-height: 100vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    /* display: grid;
+    grid-template-columns: 50px repeat(10, 50px);
+    grid-template-rows: repeat(15, 50px); */
 }
 
 *,

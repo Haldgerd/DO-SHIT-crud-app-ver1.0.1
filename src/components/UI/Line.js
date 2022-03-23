@@ -1,7 +1,12 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 
-const Line = () => {
-    return <div>Line</div>;
+const Line = ({ lineClass }) => {
+    return <div className={lineClass} />;
+};
+
+Line.propTypes = {
+    lineClass: PropTypes.string.isRequired,
 };
 
 export default Line;

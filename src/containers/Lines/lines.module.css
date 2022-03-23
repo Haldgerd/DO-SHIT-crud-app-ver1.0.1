@@ -1,0 +1,28 @@
+.line {
+    min-height: 100vh;
+    width: 10px;
+    margin-left: 0.45em;
+}
+
+.line__wrapper {
+    position: absolute;
+    left: 0;
+    width: 10vw;
+    display: flex;
+}
+
+.line:first-child {
+    background-color: #e5641c;
+}
+
+.line:nth-child(2) {
+    background-color: #04a5cd;
+}
+
+.line:nth-child(3) {
+    background-color: #dabb28;
+}
+
+.line:last-child {
+    background-color: #113fd9;
+}

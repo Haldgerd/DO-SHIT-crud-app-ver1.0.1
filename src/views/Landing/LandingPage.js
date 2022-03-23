@@ -2,18 +2,14 @@ import React from 'react';
 
 // ------------------- COMPONENTS IMPORT -----------------
 import MainTitle from '../../containers/MainTitle/MainTitle';
-import Image from '../../components/UI/Image';
-import Illustration from '../../assets/images/diberkato-ufo-686x823.jpg';
+import Lines from '../../containers/Lines/Lines';
 
 const LandingPage = () => {
     return (
         <>
+            <Lines />
             <MainTitle />
-            <Image
-                alternative="Illustrated person in 80's outfit."
-                source={Illustration}
-                imageClass=""
-            />
+            {/* navigation bar */}
         </>
     );
 };
