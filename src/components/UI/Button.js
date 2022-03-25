@@ -1,23 +1,22 @@
 import React from 'react';
-import '@assets/styles/button.scss';
 import PropTypes from 'prop-types';
 
-const Button = ({ buttonClass, onClickHandleFunction }) => {
+const Button = ({ buttonClass, onClickHandleFunction, children }) => {
     return (
         <button
             type="button"
             className={buttonClass}
             onClick={onClickHandleFunction}
         >
-            {buttonContent}
+            {children}
         </button>
     );
 };
 
-Button.PropTypes = {
+Button.propTypes = {
     buttonClass: PropTypes.string.isRequired,
     onClickHandleFunction: PropTypes.func.isRequired,
-    buttonContent: PropTypes.node,
+    children: PropTypes.node.isRequired,
 };
 
 export default Button;

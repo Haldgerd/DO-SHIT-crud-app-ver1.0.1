@@ -1,28 +1,27 @@
 .line {
     min-height: 100vh;
-    width: 10px;
-    margin-left: 0.45em;
+    width: 1vw;
+    margin-left: 0.35em;
 }
 
 .line__wrapper {
+    display: flex;
     position: absolute;
     left: 0;
-    width: 10vw;
-    display: flex;
 }
 
 .line:first-child {
-    background-color: #e5641c;
+    background-color: hsl(21, 79%, 50%);
 }
 
 .line:nth-child(2) {
-    background-color: #04a5cd;
+    background-color: hsl(192, 96%, 41%);
 }
 
 .line:nth-child(3) {
-    background-color: #dabb28;
+    background-color: hsl(50, 71%, 51%);
 }
 
 .line:last-child {
-    background-color: #113fd9;
+    background-color: hsl(226, 85%, 46%);
 }

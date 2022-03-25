@@ -10,4 +10,8 @@ Paragraph.propTypes = {
     text: PropTypes.string,
 };
 
+Paragraph.defaultProps = {
+    text: 'Paragraph text',
+};
+
 export default Paragraph;

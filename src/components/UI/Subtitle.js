@@ -2,7 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 
 const Subtitle = ({ subtitleClass, subtitle }) => {
-    return <h4 className={subtitleClass}>{subtitle}</h4>;
+    return <h2 className={subtitleClass}>{subtitle}</h2>;
 };
 
 Subtitle.propTypes = {

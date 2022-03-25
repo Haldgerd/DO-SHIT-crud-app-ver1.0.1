@@ -56,7 +56,9 @@
             2,
             { "forbidDefaultForRequired": true }
         ],
-        "no-plusplus": ["error", { "allowForLoopAfterthoughts": true }]
+        "no-plusplus": ["error", { "allowForLoopAfterthoughts": true }],
+        "no-console": [0, { "allow": ["log"] }]
+
         // "import/no-extraneous-dependencies": [
         //     "error",
         //     {

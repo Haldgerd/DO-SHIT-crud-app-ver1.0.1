@@ -58,7 +58,7 @@ module.exports = {
             {
                 test: /\.css$/i,
                 use: ['style-loader', 'css-loader'],
-                include: './src/assets/styles/global.css',
+                include: path.resolve(__dirname, 'src/assets/styles/'),
                 exclude: /\.module\.css$/,
             },
             {

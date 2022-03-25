@@ -21,4 +21,9 @@ Input.propTypes = {
     defaultValue: [PropTypes.string, PropTypes.number],
 };
 
+Input.defaultProps = {
+    placeholder: 'placeholder',
+    defaultValue: 'value',
+};
+
 export default Input;
