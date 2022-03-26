@@ -6,8 +6,16 @@
     font-style: normal;
 }
 
+@font-face {
+    font-family: 'squada_oneregular';
+    src: url('../fonts/squadaone-regular-webfont.woff2') format('woff2'),
+        url('../fonts/squadaone-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
 :root {
-    font-family: 'bebasregular', monospace;
+    font-family: 'squada_oneregular', monospace;
     color: hsl(0, 0%, 100%);
     background-color: hsl(344, 81%, 51%);
 }
@@ -23,4 +31,5 @@
 button {
     border: none;
     outline: none;
+    color: black;
 }

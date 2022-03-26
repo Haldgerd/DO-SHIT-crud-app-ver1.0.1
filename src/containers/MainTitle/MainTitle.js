@@ -12,7 +12,7 @@ const MainTitle = () => {
             <Title titleClass={styles.main__title} title="do shit!" />
             <Subtitle
                 subtitleClass={styles.main__subtitle}
-                subtitle="the shit application"
+                subtitle="just do shit"
             />
         </Header>
     );

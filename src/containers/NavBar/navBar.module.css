@@ -1,5 +1,5 @@
 .landing__nav {
-    width: 50vw;
+    width: 45vw;
     height: 50vh;
-    background-color: pink;
+    margin-left: auto;
 }

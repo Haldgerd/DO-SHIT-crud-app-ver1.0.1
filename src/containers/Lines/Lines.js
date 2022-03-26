@@ -11,7 +11,9 @@ const Lines = () => {
         const MAX__LINES = 4;
 
         for (let minLines = 0; minLines < MAX__LINES; minLines += 1) {
-            lines.push(<Line lineClass={`${styles.line}`} />);
+            lines.push(
+                <Line key={` line${minLines}`} lineClass={styles.line} />
+            );
         }
 
         return lines;

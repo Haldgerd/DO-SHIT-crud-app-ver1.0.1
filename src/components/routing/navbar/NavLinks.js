@@ -39,15 +39,16 @@ const NavLinks = () => {
                 return (
                     <li className={styles.nav__link}>
                         <Button
-                            buttonContent="icon"
                             buttonClass={styles.nav__button}
                             onClickHandleFunction={() => {
                                 console.log(link.page);
                             }}
-                        />
-                        <Wrapper wrapperClass={styles['nav__context-wrapper']}>
+                        >
+                            <p>ICON</p>
+                        </Button>
+                        <Wrapper wrapperClass={styles.nav__context}>
                             <Paragraph
-                                paragraphClass={styles.nav__context}
+                                paragraphClass={styles.nav__text}
                                 text={link.context}
                             />
                         </Wrapper>
