@@ -31,16 +31,20 @@
 
 li:first-child {
     background-color: hsl(50, 71%, 51%);
+    color: hsl(11, 85%, 39%);
 }
 
 li:nth-child(2) {
-    background-color: hsl(192, 96%, 41%);
+    background-color: #ad3e09;
+    color: hsl(50, 90%, 51%);
 }
 
 li:nth-child(3) {
-    background-color: hsl(21, 79%, 50%);
+    background-color: hsl(192, 96%, 41%);
+    color: hsl(0, 0%, 100%);
 }
 
 li:last-child {
-    background-color: hsl(19, 90%, 36%);
+    background-color: #e5641c;
+    color: hsl(228, 56%, 52%);
 }

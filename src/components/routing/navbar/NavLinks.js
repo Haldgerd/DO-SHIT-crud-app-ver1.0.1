@@ -43,9 +43,7 @@ const NavLinks = () => {
                             onClickHandleFunction={() => {
                                 console.log(link.page);
                             }}
-                        >
-                            <p>ICON</p>
-                        </Button>
+                        />
                         <Wrapper wrapperClass={styles.nav__context}>
                             <Paragraph
                                 paragraphClass={styles.nav__text}

@@ -15,8 +15,9 @@
 }
 
 .main__subtitle {
-    font-size: clamp(8px, 6vh, 1.75rem);
+    font-size: clamp(8px, 5vh, 2.75rem);
     text-transform: lowercase;
     align-self: flex-start;
-    margin-left: 4em;
+    margin-left: 3.2em;
+    margin-top: -0.8em;
 }
