@@ -12,6 +12,7 @@ import './assets/styles/global.css';
 
 const App = () => {
     return (
+        // error occuring when trying to access page directly through browser path.
         <Router>
             <Routes>
                 <Route exact path="/" element={<LandingPage />} />

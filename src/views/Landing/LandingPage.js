@@ -9,12 +9,12 @@ import styles from './landingPage.module.css';
 
 const LandingPage = () => {
     return (
-        <main className={styles.landing__page}>
+        <section className={styles.landing__page}>
             <Line lineClass={styles['landing__line-orange']} />
             <Lines />
             <MainTitle />
             <NavBar />
-        </main>
+        </section>
     );
 };
 
