@@ -1,0 +1,45 @@
+.login__bar {
+    height: 100%;
+    width: 47vw;
+    background-color: hsl(46, 100%, 56%);
+    margin-left: auto;
+    display: flex;
+}
+
+.login__bar > * {
+    height: 100%;
+}
+
+.login__btn {
+    font-size: 1.5rem;
+}
+
+.login__btn:first-child {
+    background-color: hsl(228, 56%, 52%);
+    width: 8vh;
+    margin-left: 1em;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+}
+
+.login__btn:nth-child(2) {
+    background-color: hsl(11, 85%, 39%);
+    color: white;
+    text-transform: uppercase;
+    flex-grow: 2;
+}
+
+.login__btn:nth-child(3) {
+    background-color: hsl(228, 56%, 52%);
+    color: white;
+    text-transform: uppercase;
+    flex-grow: 2;
+}
+
+.signup__text {
+    width: max-content;
+    margin-left: 2em;
+}

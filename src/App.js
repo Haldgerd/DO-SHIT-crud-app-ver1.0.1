@@ -15,12 +15,12 @@ const App = () => {
         // error occuring when trying to access page directly through browser path.
         <Router>
             <Routes>
-                <Route exact path="/" element={<LandingPage />} />
-                <Route exact path="/Login" element={<Login />} />
-                <Route exact path="/DailyShit" element={<Daily />} />
-                <Route exact path="/MeetingsShit" element={<Meetings />} />
-                <Route exact path="/YearShit" element={<YearGoals />} />
-                <Route exact path="/ShitLog" element={<HistoryLog />} />
+                <Route path="/" element={<LandingPage />} />
+                <Route path="/Login" element={<Login />} />
+                <Route path="/DailyShit" element={<Daily />} />
+                <Route path="/MeetingsShit" element={<Meetings />} />
+                <Route path="/YearShit" element={<YearGoals />} />
+                <Route path="/ShitLog" element={<HistoryLog />} />
                 {/* <Route path="*" element={<Error />}/> */}
             </Routes>
         </Router>

@@ -2,65 +2,53 @@ import React from 'react';
 import { useNavigate } from 'react-router-dom';
 
 // --------------- COMPONENTS IMPORT ---------------
-import Button from '../../UI/Button';
-import Wrapper from '../../wrappers/Wrapper';
-import Paragraph from '../../UI/Paragraph';
+import NavLink from './NavLink';
 import styles from './navLinks.module.css';
 
-const links = [
+const LINKS_CONTENT = [
     {
         id: 'link1',
-        page: 'login',
-        context: 'LOGIN ** LOGIN ** LOGIN ** LOGIN ** LOGIN ** LOGIN ** ',
+        context: 'MENU ** MENU ** MENU ** MENU ** MENU ** MENU ** ',
         path: '/Login',
+        icon: 'pixelarticons:login',
     },
     {
         id: 'link2',
-        page: 'daily',
-        context: 'DAILYSHIT ** DAILYSHIT ** DAILYSHIT ** DAILYSHIT ** ',
+        context: 'EXPLORE ** EXPLORE ** EXPLORE ** EXPLORE ** EXPLORE',
         path: '/DailyShit',
+        icon: 'simple-icons:azuredataexplorer',
     },
     {
         id: 'link3',
-        page: 'goals',
-        context: 'SHITGOALS ** SHITGOALS ** SHITGOALS ** SHITGOALS ** ',
+        context: 'ABOUT ** ABOUT ** ABOUT ** ABOUT ** ABOUT ** ABOUT ',
         path: '/YearShit',
+        icon: 'ci:list-checklist-alt',
     },
     {
         id: 'link4',
-        page: 'log',
-        context: 'SHITLOG ** SHITLOG ** SHITLOG ** SHITLOG ** SHITLOG ** ',
+        context: 'CONTACT ** CONTACT ** CONTACT ** CONTACT ** CONTACT ',
         path: '/ShitLog',
+        icon: 'pixelarticons:contact-plus',
     },
 ];
 
 const NavLinks = () => {
     const navigate = useNavigate();
 
-    return (
-        <ul className={styles.nav__links}>
-            {links.map((link) => {
-                return (
-                    <li className={styles.nav__link} key={link.id}>
-                        <Button
-                            buttonClass={styles.nav__button}
-                            onClickHandleFunction={() => {
-                                navigate(link.path);
-                            }}
-                        >
-                            <p />
-                        </Button>
-                        <Wrapper wrapperClass={styles.nav__context}>
-                            <Paragraph
-                                paragraphClass={styles.nav__text}
-                                text={link.context}
-                            />
-                        </Wrapper>
-                    </li>
-                );
-            })}
-        </ul>
-    );
+    const navLinks = LINKS_CONTENT.map((link) => {
+        return (
+            <NavLink
+                key={link.id}
+                icon={link.icon}
+                context={link.context}
+                path={() => {
+                    navigate(link.path);
+                }}
+            />
+        );
+    });
+
+    return <menu className={styles.nav__links}>{navLinks}</menu>;
 };
 
 export default NavLinks;

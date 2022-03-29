@@ -2,7 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 
 const Square = ({ squareClass }) => {
-    return <div className={squareClass}></div>;
+    return <div className={squareClass} />;
 };
 
 Square.propTypes = {
