@@ -11,7 +11,7 @@ Line.propTypes = {
 };
 
 Line.defaultProps = {
-    children: PropTypes.node,
+    children: <p />,
 };
 
 export default Line;
