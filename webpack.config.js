@@ -52,7 +52,6 @@ module.exports = {
                         },
                     },
                 ],
-                // rule for css modules
                 include: /\.module\.css$/,
             },
             {
@@ -61,10 +60,6 @@ module.exports = {
                 include: path.resolve(__dirname, 'src/assets/styles/'),
                 exclude: /\.module\.css$/,
             },
-            // {
-            //     test: /\.s[ac]ss$/i,
-            //     use: ['style-loader', 'css-loader', 'sass-loader'],
-            // },
             {
                 test: /\.(png|svg|jpg|jpeg|gif)$/i,
                 include: path.resolve(__dirname, './src/assets/images'),
